@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+
+            using System.IO;
+
+namespace Task4;
+
+    class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+
+
+
+            string text = File.ReadAllText("characters.txt");
+            Console.WriteLine(text);
+
+
+
+
+            for (int i = 0; i < text.Length; i++)
+            {
+
+
+                Console.WriteLine(text[i]);
+            }
+
+            string p = "ZJZETKTYKJMHOKMNEWBVPHJLDWANNTIBZFODARQABVFIDPZSPGPXTQTRZNBXJGKQAKIJWIMNFATUBBHNWHXHDKIJLXDNQTQVKOHTHQWGTCSSWZPYFNACIDMPCZXYFZWMKYJNUOGFLQNBSQMMHFHCSOMHBRRITXBUFFIYPCDRGVQSPLWLMKRARTUVLBLCXYMNPSVNHOWFBQWXXUSQVFVIGADLLNMNRBTIIDCWPJEYNMYAXWXQJVHSDEHOPKBUBJOZXOPUSVALBXUUCCOOPWDVUBFDWOHFHJWEXYDJHCYOUVRFJMMNVMFEFSFWJLYDOVDRAPWDYEHMYPBYJZUJCTJUERZFSHAWDUZZSZEUPIORFSGPQHMJRPBULINJPQKQELIDPCGJVZTTESPMKKPLVRFOSFNJMVEZYYNUJCZOBCORVIPTTAYFBZVNFULKOXWZVUVGEUDIKAKSCNTJPUPMWYXZCAOPRPZDGOVANJOYXQVAOCKRABUUHKCWXVDEGOQUBGMNSTWGFQOGDWKZPWOPVFVVLZDRFJSJZAZIQWZHFNORWWTALDPJZBZVKQCSPEBWXFGDWCJSXGJHREZPGCGBUJJYAEXZUGRBMSTQPPDJUWMSRSEGRMMNYZBOVICSEJYQPIUYKIAQYXHYWQHHZRIIUEDNQFVGMLEKXWDIYFVIMWPARDREBVSNBQVLFGIFNTDNSWAANYJUVZVYPCWNNRFRSRJHASDSXQVTSCIUCRQCMYRCUXWDKUSWNMUBNTAVVRXFDCGNUBKVACFUZHMCWZHCYZFFHGGJRVHVAMYSRJJIJWWLHZBGGXZVJUGEXAFNUBEEUKTNIUKMQZSCDUYIFADTWMLGFUVRDVNIRRQWFOXLNMEJCEACBXIUXLIIYNHOZTJULJKMDBCQCSGJHCDATSPGNTLFJHYSGJLUDJYSTOZAURSFFYBWJGUHDCHSYFCWDJJSHLGXDLHFTPLVBFAKFBIZODQBCGTOLCWKHZYTRESYZPOO";
+
+
+
+            Console.WriteLine("String: " + p);
+
+            while (p.Length > 0)
+            {
+
+                Console.WriteLine(p[0] + " = ");
+                int cal = 0;
+
+
+                for (int j = 0; j < p.Length; j++)
+                {
+                    if (p[0] == p[j])
+                    {
+
+                        cal++;
+
+                    }
+                }
+
+                Console.WriteLine(cal);
+                p = p.Replace(p[0].ToString(), string.Empty);
+
+
+            }
+
+            Console.ReadLine();
+
+
+        }
+    }
+
+
+
+
+}
+    }
+}
